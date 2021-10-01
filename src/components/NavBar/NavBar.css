@@ -1,0 +1,15 @@
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.Nav{
+
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.Nav li{
+    margin: 0 30px;
+}
