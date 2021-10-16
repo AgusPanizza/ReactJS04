@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.fotos{
+  animation-name: imagenes;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  height: 1000px;
+  background-position: center;
+  background-size:cover;
+}
+
+@keyframes imagenes {
+  0% {
+    background-image: url(./img/Entrega.png); }
+  25% {
+    background-image: url(./img/Entrada.png); }
+  50% {
+    background-image: url(./img/Vaso.png); }
+  75% {
+    background-image: url(./img/Max.png); }
+  100% {
+    background-image: url(./img/Cafecito.png); } }

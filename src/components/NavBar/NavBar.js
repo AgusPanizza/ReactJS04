@@ -1,21 +1,29 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import { CartWidget } from './CartWidget'
 import "./NavBar.css"
+import{NavDropdown} from 'react-bootstrap'
 
 export const NavBar = ({logo}) =>{
 return (
 <header>
-
-<h1 className="logo">{logo}</h1>
+<h1 className="logo">
+<img src= "../Logo.png" alt="logo" width="150px" height="130px"/>
+{logo}
+</h1>
 
 <nav className="Nav">
-    <li>Home</li>
-    <li>Nosotros</li>
-    <li>Nuestro Café</li>
-    <li>Patisserie</li>
-    <li>Contacto</li>
-   <li><CartWidget/></li>
+<NavLink exact to= "/">Home</NavLink>
+<NavLink exact to= "/nosotros">Nosotros</NavLink>
+<NavLink exact to= "/nuestro Café">Nuestro Café</NavLink>
+<NavLink exact to= "/patisserie">Patisserie</NavLink>
+<NavDropdown title="E-Shop" id="basic-nav-dropdown">
+<NavLink exact to= "/e-Shop/Rambla">Rambla</NavLink > <br/>
+<NavLink  exact to= "/e-Shop/Puerto Blest">Puerto Blest</NavLink >
+</NavDropdown>
+<NavLink exact to= "/contacto">Contacto</NavLink>
 
+<Link to= "/Cart"><CartWidget/></Link>
 </nav>
 
 </header>

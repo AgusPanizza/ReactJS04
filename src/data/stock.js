@@ -4,7 +4,8 @@ export const stock = [
         name: "Rambla Café",
         description:"Nicaragua",
         price:1400,
-        img: "",
+        img: "../../CafeRambla.jpg",
+        category: "Rambla"
 
     },
     {
@@ -12,34 +13,39 @@ export const stock = [
         name: "Puerto Blest Café",
         description:"Kenia",
         price:1400,
-        img:"",
+        img:"../../prem.png",
+        category: "Puerto Blest"
     },
     {
         id:3,
         name: "Puerto Blest Café",
         description:"Colombia",
         price:1200,
-        img:"",
+        img:"../../Colombia.jpeg",
+        category: "Puerto Blest"
     },
     {
         id:4,
         name: "Puerto Blest Café",
         description:"Guatemala",
         price:1200,
-        img:"",
+        img:"../../Guatemala.jpeg",
+        category: "Puerto Blest"
     },
     {
     id:5,
     name: "Puerto Blest Café",
     description:"Perú",
     price:1200,
-    img:"",
+    img:"../../Peru.jpeg",
+    category: "Puerto Blest"
     },
     {
         id:6,
         name: "Puerto Blest Café",
         description:"El Salvador",
         price:1200,
-        img:"",
+        img:"../../ElSalvador.png",
+        category: "Puerto Blest"
         }
 ]
